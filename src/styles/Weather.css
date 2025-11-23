@@ -1,0 +1,188 @@
+/* SAYFA GENEL ARKAPLAN */
+body {
+  background: radial-gradient(circle at top left, #83a4d4, #b6fbff);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ANA CONTAINER */
+.app-container {
+  text-align: center;
+  max-width: 420px;
+  margin: 50px auto;
+  padding: 20px;
+  transition: background 0.5s ease;
+}
+
+/* FORM */
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  opacity: 0.9;
+}
+
+/* WEATHER CARD (GLASSMORPHISM) */
+.weather-card {
+  position: relative;
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER ANİMASYONU */
+.weather-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* WEATHER İCON ANİMASYONU */
+.weather-card img {
+  width: 110px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+/* GÜNDÜZ TEMA */
+.weather-card.day {
+  background: rgba(255, 255, 255, 0.25);
+  color: #333;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* GECE TEMA */
+.weather-card.night {
+  background: rgba(20, 20, 35, 0.45);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(140, 140, 255, 0.3);
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 50, 0.7);
+}
+
+.weather-card.night .description {
+  color: #dcdcdc;
+}
+
+/* ALT DETAYLAR */
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+/* HATA */
+.error {
+  color: #d32f2f;
+}
+
+/* FAVORİ BUTONU (⭐) */
+.fav-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.fav-btn:hover {
+  transform: scale(1.2);
+}
+
+/* FAVORİ ŞEHİRLER LİSTESİ */
+.favorites-list {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.favorites-list h3 {
+  margin-bottom: 10px;
+}
+
+.fav-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fav-items button {
+  margin: 6px;
+  padding: 8px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.fav-items button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+/* ───────────────────────────── */
+/* 🌦 DİNAMİK ARKAPLAN TEMA CLASSLARI */
+/* ───────────────────────────── */
+
+/* DEFAULT */
+.default-bg {
+  background: radial-gradient(circle at top left, #83a4d4, #b6fbff);
+}
+
+/* CLEAR (Güneşli) */
+.clear-bg {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+}
+
+/* CLOUDY (Bulutlu) */
+.cloudy-bg {
+  background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+}
+
+/* RAIN (Yağmurlu) */
+.rain-bg {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+}
+
+/* SNOW (Karlı) */
+.snow-bg {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+/* STORM (Fırtına) */
+.storm-bg {
+  background: linear-gradient(135deg, #232526, #414345);
+}

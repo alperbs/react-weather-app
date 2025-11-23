@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+React Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive weather application built using React, OpenWeather API, Axios, and custom hooks.  
+It includes geolocation weather detection, dynamic backgrounds, animated UI elements, and a persistent favorites system.  
+This project was created as part of my software engineering portfolio and is used in Erasmus internship applications.
 
-## Available Scripts
+Features:
+- Search weather by city name
+- Automatic weather detection via Geolocation API
+- Shows temperature, humidity, wind speed, description, and live weather icons
+- Dynamic backgrounds (Clear, Clouds, Rain, Snow, Storm)
+- Day and night theming
+- Smooth animations
+- Responsive design
+- Favorite cities saved using localStorage
 
-In the project directory, you can run:
+Tech Stack:
+- React
+- Axios
+- OpenWeather API
+- CSS3 (animations + glassmorphism)
+- LocalStorage
+- Geolocation API
 
-### `npm start`
+Installation:
+1. Clone the repository:
+   git clone https://github.com/alperbs/react-weather-app.git
+   cd react-weather-app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Install dependencies:
+   npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Create a .env file:
+   REACT_APP_WEATHER_API_KEY=your_api_key_here
 
-### `npm test`
+4. Start the project:
+   npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Folder Structure:
+src/
+  components/
+    WeatherCard.jsx
+  hooks/
+    useWeather.js
+  styles/
+    Weather.css
+  App.js
+  index.js
+public/
+.env
+package.json
 
-### `npm run build`
+Deployment (optional):
+Deploy using Vercel:
+- Push project to GitHub
+- Go to vercel.com
+- New Project → Import your repo
+- Deploy
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Author:
+Polat Alper BAŞ  
+Software Engineering Student  
+Erasmus Internship Candidate  
+GitHub: https://github.com/alperbs
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Support:
+If you like this project, leaving a star on GitHub is appreciated.
