@@ -5,8 +5,14 @@ https://react-weather-app-psi-lilac-44.vercel.app/
 React Weather App
 
 A modern and responsive weather application built using React, OpenWeather API, Axios, and custom hooks.  
-It includes geolocation weather detection, dynamic backgrounds, animated UI elements, and a persistent favorites system.  
-This project was created as part of my software engineering portfolio and is used in Erasmus internship applications.
+It includes geolocation weather detection, dynamic backgrounds, animated UI elements, and a persistent favorites system.
+
+This project demonstrates my ability to build interactive UI components, consume external APIs, manage state, and design a clean user experience with real-time data.
+
+Custom hook (useWeather) — reusable async logic
+
+
+
 
 Features:
 - Search weather by city name
@@ -17,6 +23,16 @@ Features:
 - Smooth animations
 - Responsive design
 - Favorite cities saved using localStorage
+
+ 
+Dark/Light Mode — Theme switching for better user experience
+Hourly & Weekly Forecast — More detailed weather insights
+API Response Caching — Reduces unnecessary API calls and improves performance
+Offline Support (Service Workers) — Allow access to last known weather data without internet
+TypeScript Migration — Stronger typing and fewer runtime errors
+Testing (React Testing Library) — Component-level reliability and regression prevention
+Error & Loading UI Enhancements — More polished user feedback
+Favorite Cities Sync — Cloud sync instead of only localStorage
 
 Tech Stack:
 - React
@@ -64,7 +80,7 @@ Deploy using Vercel:
 Author:
 Polat Alper BAŞ  
 Software Engineering Student  
-Erasmus Internship Candidate  
+
 GitHub: https://github.com/alperbs
 
 Support:
