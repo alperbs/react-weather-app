@@ -1,5 +1,6 @@
 ## 🌐 Live Demo
 https://react-weather-app-psi-lilac-44.vercel.app/
+Looking for Erasmus+ Internship – Full-Stack Development
 
 
 React Weather App
@@ -83,4 +84,4 @@ Software Engineering Student
 
 GitHub: https://github.com/alperbs
 
-Looking for Erasmus+ Internship – Full-Stack Development
+
