@@ -83,5 +83,4 @@ Software Engineering Student
 
 GitHub: https://github.com/alperbs
 
-Support:
-If you like this project, leaving a star on GitHub is appreciated.
+Looking for Erasmus+ Internship – Full-Stack Development
